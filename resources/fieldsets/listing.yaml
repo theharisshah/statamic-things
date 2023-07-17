@@ -1,0 +1,59 @@
+title: Listing
+fields:
+  -
+    handle: is_auto
+    field:
+      default: false
+      type: toggle
+      display: Auto
+      icon: toggle
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
+    handle: category
+    field:
+      max_items: 1
+      mode: select
+      create: true
+      taxonomies:
+        - category
+      type: terms
+      display: 'Choose Category'
+      icon: taxonomy
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+      if:
+        is_auto: 'equals true'
+  -
+    handle: articles
+    field:
+      max_items: 4
+      mode: default
+      create: true
+      collections:
+        - articles
+      type: entries
+      display: 'Choose Articles'
+      icon: entries
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+      if:
+        is_auto: 'equals false'
+  -
+    handle: template_field
+    field:
+      hide_partials: true
+      blueprint: false
+      type: template
+      display: Template
+      icon: template
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false

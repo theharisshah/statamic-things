@@ -1,0 +1,36 @@
+title: Content
+fields:
+  -
+    handle: sections
+    field:
+      collapse: true
+      previews: true
+      max_sets: 2
+      fullscreen: true
+      sets:
+        main:
+          display: Main
+          instructions: null
+          icon: null
+          sets:
+            main:
+              display: Main
+              instructions: null
+              icon: null
+              fields:
+                -
+                  import: listing
+            widget:
+              display: Widget
+              instructions: null
+              icon: null
+              fields:
+                -
+                  import: listing
+      type: replicator
+      display: Sections
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false

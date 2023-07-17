@@ -1,0 +1,19 @@
+{
+    "name": "theharisshah/comments",
+    "autoload": {
+        "psr-4": {
+            "Theharisshah\\Comments\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Comments",
+            "description": "Comments addon"
+        },
+        "laravel": {
+            "providers": [
+                "Theharisshah\\Comments\\ServiceProvider"
+            ]
+        }
+    }
+}

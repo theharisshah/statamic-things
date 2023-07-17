@@ -1,0 +1,19 @@
+title: Section
+fields:
+  -
+    handle: section
+    field:
+      fields:
+        -
+          import: content
+      mode: table
+      add_row: 'Add Section'
+      reorderable: true
+      fullscreen: true
+      type: grid
+      display: Section
+      icon: grid
+      listable: false
+      instructions_position: above
+      visibility: visible
+      hide_display: false

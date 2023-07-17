@@ -1,0 +1,82 @@
+title: Page
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              instructions: ssss
+              instructions_position: below
+              listable: hidden
+              visibility: visible
+              input_type: text
+              antlers: false
+              hide_display: false
+          -
+            import: section
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+  SEO:
+    display: SEO
+    sections:
+      -
+        fields:
+          -
+            handle: meta_title
+            field:
+              type: text
+              default: '%title% %title_separator% %site_name%'
+              display: 'Meta Title'
+          -
+            handle: meta_description
+            field:
+              type: textarea
+              display: 'Meta Description'
+              character_limit: 160
+          -
+            handle: canonical_url
+            field:
+              type: text
+              display: 'Canonical URL'
+              instructions: 'The source or preferred version of this page.'
+              listable: hidden
+          -
+            handle: og_image
+            field:
+              type: assets
+              max_files: 1
+              restrict: false
+              display: 'OG Image'
+              instructions: 'Control how this page looks when shared on websites which interpret Open Graph data (Facebook, LinkedIn etc).'
+              validate:
+                - image
+          -
+            handle: noindex_page
+            field:
+              type: toggle
+              display: 'No Index'
+              instructions: 'Prevent this page from being indexed by search engines.'
