@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2fcbfd60598d48719b7b82f134c19ba5",
+    "content-hash": "f07adbeffda069d30a5d805af75c386e",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -8066,73 +8066,6 @@
             "time": "2023-04-05T11:54:14+00:00"
         },
         {
-            "name": "theharisshah/comments",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "addons/theharisshah/comments",
-                "reference": "97c322ac59d00c7eb1a0bc5261dc670b576ceebf"
-            },
-            "type": "library",
-            "extra": {
-                "statamic": {
-                    "name": "Comments",
-                    "description": "Comments addon"
-                },
-                "laravel": {
-                    "providers": [
-                        "Theharisshah\\Comments\\ServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Theharisshah\\Comments\\": "src"
-                }
-            },
-            "transport-options": {
-                "relative": true
-            }
-        },
-        {
-            "name": "theharisshah/statamic-seo",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "addons/theharisshah/statamic-seo",
-                "reference": "7ea7a8eb69584c19ca9b4baca459c4d4bac65ac4"
-            },
-            "type": "statamic-add-on",
-            "extra": {
-                "statamic": {
-                    "name": "Statamic Seo",
-                    "description": "Statamic Seo addon"
-                },
-                "laravel": {
-                    "providers": [
-                        "Theharisshah\\StatamicSeo\\ServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Theharisshah\\StatamicSeo\\": "src"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Haris Shah",
-                    "email": "shahharis383@gmail.com"
-                }
-            ],
-            "transport-options": {
-                "relative": true
-            }
-        },
-        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.6",
             "source": {
@@ -11098,10 +11031,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "theharisshah/comments": 20,
-        "theharisshah/statamic-seo": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
