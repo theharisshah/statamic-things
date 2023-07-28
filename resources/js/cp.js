@@ -3,12 +3,12 @@
  * https://statamic.dev/extending/control-panel
  */
 
-/** Example Fieldtype
 
-import ExampleFieldtype from './components/fieldtypes/ExampleFieldtype.vue';
+
+import Myfield from './components/fieldtypes/Myfield.vue'
 
 Statamic.booting(() => {
-    Statamic.$components.register('example-fieldtype', ExampleFieldtype);
+    Statamic.$components.register('my-field', Myfield);
 });
 
-*/
+

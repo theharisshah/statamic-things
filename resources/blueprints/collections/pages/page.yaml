@@ -21,6 +21,17 @@ tabs:
               hide_display: false
           -
             import: section
+          -
+            handle: myfield_field
+            field:
+              mode: default
+              type: myfield
+              display: 'Myfield Field'
+              icon: myfield
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
   sidebar:
     display: Sidebar
     sections:
@@ -70,6 +81,7 @@ tabs:
               type: assets
               max_files: 1
               restrict: false
+              container: assets
               display: 'OG Image'
               instructions: 'Control how this page looks when shared on websites which interpret Open Graph data (Facebook, LinkedIn etc).'
               validate:

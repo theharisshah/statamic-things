@@ -37,9 +37,27 @@ tabs:
               instructions_position: above
               listable: hidden
               visibility: visible
-              max_items: 2
+              max_items: 1
               create: true
               hide_display: false
+          -
+            handle: sub_category
+            field:
+              mode: select
+              create: true
+              taxonomies:
+                - sub_category
+              type: terms
+              display: 'Sub Category'
+              icon: taxonomy
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              max_items: 1
+              validate:
+                - required
+                - 'belongs_to:category'
   SEO:
     display: SEO
     sections:
@@ -70,6 +88,7 @@ tabs:
               type: assets
               max_files: 1
               restrict: false
+              container: assets
               display: 'OG Image'
               instructions: 'Control how this page looks when shared on websites which interpret Open Graph data (Facebook, LinkedIn etc).'
               validate:
